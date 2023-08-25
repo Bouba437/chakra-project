@@ -1,4 +1,4 @@
-import { Button, Checkbox, Container, Flex, FormControl, FormLabel, GridItem, HStack, Heading, Input, Select, SimpleGrid, Text, Textarea, VStack } from '@chakra-ui/react';
+import { Button, Checkbox, FormControl, FormLabel, GridItem, HStack, Heading, Input, Select, SimpleGrid, Text, Textarea, VStack } from '@chakra-ui/react';
 
 const YourDetails = () => {
     return (

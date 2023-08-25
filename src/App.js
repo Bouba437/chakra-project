@@ -1,24 +1,20 @@
-import logo from './logo.svg';
 import './App.css';
-import { Button, Checkbox, Container, Flex, FormControl, FormLabel, GridItem, HStack, Heading, Input, Select, SimpleGrid, Text, Textarea, VStack } from '@chakra-ui/react';
-import YourDetails from './components/YourDetails';
-import Cart from './components/Cart';
+import { BrowserRouter as Router, Routes, Route} from "react-router-dom";
+import Home from './pages/Home';
+import PostPage from './pages/PostPage';
+import CartPage from './pages/CartPage';
+import NavBar from './components/navigation/NavBar';
 
 function App() {
     return (
-        <Container maxW="container.xl" p="10">
-            <Flex 
-                h={{ base: "auto", md: "100vh" }}
-                py={[0, 10, 20]}
-                direction={{
-                    base: "column-reverse",
-                    md: "row",
-                }}
-            >
-                <YourDetails />
-                <Cart />
-            </Flex>
-        </Container>
+        <Router>
+            <NavBar />
+            <Routes>
+                <Route path="/" index element={<Home />} />
+                <Route path="/post" element={<PostPage />} />
+                <Route path="/cart" element={<CartPage />} />
+            </Routes>
+        </Router>
     );
 }
 

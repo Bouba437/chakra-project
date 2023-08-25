@@ -1,4 +1,4 @@
-import { AspectRatio, Button, Checkbox, Container, Divider, Flex, FormControl, FormLabel, GridItem, HStack, Heading, Image, Input, Select, SimpleGrid, Stack, Text, Textarea, VStack, useColorMode, useColorModeValue } from '@chakra-ui/react';
+import { AspectRatio, Button, Divider, HStack, Heading, Image, Stack, Text, VStack, useColorMode, useColorModeValue } from '@chakra-ui/react';
 
 const Cart = () => {
 

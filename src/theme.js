@@ -93,7 +93,7 @@ const theme = extendTheme(
     }),
     withDefaultVariant({
         variant: "filled",
-        components: ["Input", "Select", "Textarea", "Button"],
+        components: ["Input", "Select", "Textarea"],
     })
 );
 
